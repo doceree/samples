@@ -1,0 +1,32 @@
+<mat-toolbar color="primary" id="navbar">
+  <div fxHide.gt-xs>
+    <button mat-icon-button (click) = "onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div fxFlex fxLayout fxLayoutAlign="space-between end">
+      <div>
+        <a routerLink="/" style="font-size: 24px; text-decoration: none; color: rgba(233, 237, 240, 0.74);">
+          <img src="https://storage.googleapis.com/doc_sourcefiles/ico/icons8-ios-photos-50.png" style="padding-bottom: 4px;" /> Well-being Today
+        </a>
+      </div>
+
+      <div class="container" [fxHide.xs]="true">
+        <ul>
+          <li><a mat-button [routerLink]="['/']">HOME</a></li>
+          <li><a mat-button [routerLink]="['/news']">News</a></li>
+          <li><a mat-button [routerLink]="['/drugs']">Drugs</a></li>
+          <li><a mat-button [routerLink]="['/trails']">Clinical Trails</a></li>
+        </ul>
+      </div>
+
+  </div>
+</mat-toolbar>
+
+<app-doceree-ad></app-doceree-ad>
+
+<div class="containerSlider" *ngIf="showCarousel">
+  <app-carousel [slides]="slides"></app-carousel>
+</div>
+<router-outlet></router-outlet>
+

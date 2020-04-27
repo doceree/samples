@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Well-being Today</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="https://storage.googleapis.com/doc_sourcefiles/ico/icons8-ios-photos-50.png">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+ 
+</head>
+<body>
+  <app-root></app-root>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<script>
+  var hcpContext;
+  var da = document.createElement('script');
+  da.type = 'text/javascript';
+  da.async = true;
+  da.src = 'https://dr15zo9o33078.cloudfront.net/script/render-header.js';
+  document.getElementsByTagName('head')[0].appendChild(da);
+  function docereeLogIn(userObj) {
+      if(!hcpContext){
+          hcpContext = userObj;
+          if(typeof setDocereeContext === 'function') {
+              setDocereeContext(hcpContext);
+          }
+      }
+  };
+  function docereeLogOut() {
+      document.cookie = _docereeContext+'=; Max-Age=-99999999;'; 
+  };
+  </script>
+
+
+</body>
+</html>
