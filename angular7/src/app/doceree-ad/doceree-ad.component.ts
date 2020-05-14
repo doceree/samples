@@ -27,7 +27,8 @@ export class DocereeAdComponent implements OnInit {
     const script = document.createElement('script');
     script.innerText = "var docCont={contet_id:'DOC_fg95yysk21ib1qg',content_sizes:['200 x 200'],content_type:'img'};";  
     el.appendChild(script);
-    this.loadScript('https://dev-programmatic.doceree.com/render/getJS');
+    this.loadScript('http://localhost:2007/getJS.js');
+    this.loadScript('https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js');
   }
 
   public loginToDoceree() {

@@ -1,0 +1,51 @@
+﻿<h1>Hi {{vm.user.firstName}}!</h1>
+<p>You're logged in!!</p>
+<h3>All registered users:</h3>
+<ul>
+    <li ng-repeat="user in vm.allUsers">
+        {{user.username}} ({{user.firstName}} {{user.lastName}})
+        - <a ng-click="vm.deleteUser(user.id)">Delete</a>
+    </li>
+</ul>
+
+<div>
+    <div id='DOC_54wdljk7yjwtdw' ng-if="vm.user.firstName === 'mobile'">
+        <script type='text/javascript'>
+            var docCont = {
+                contet_id: 'DOC_54wdljk7yjwtdw',
+                content_sizes: ['250 x 250'],
+                content_type: 'img'
+            };
+        </script>
+        <script type='text/javascript' src="https://qa-programmatic.doceree.com/render/getJS">
+        </script>
+    </div>
+    
+    <div id='DOC_4pze1sjka6dj06c' ng-if="vm.user.firstName === 'web'">
+        <script type='text/javascript'>
+            var docCont = {
+                contet_id: 'DOC_4pze1sjka6dj06c',
+                content_sizes: ['300 x 600'],
+                content_type: 'img'
+            };
+        </script>
+        <script type='text/javascript' src="https://qa-programmatic.doceree.com/render/getJS">
+        </script>
+    </div>
+    
+    <div id='DOC_54wdljk7yizpc6' ng-if="vm.user.firstName === 'mobile'">
+        <script type='text/javascript'>
+            var docCont = {
+                contet_id: 'DOC_54wdljk7yizpc6',
+                content_sizes: ['200 x 200'],
+                content_type: 'img'
+            };
+        </script>
+        <script type='text/javascript' src="https://qa-programmatic.doceree.com/render/getJS">
+        </script>
+    </div>
+</div>
+
+
+<p>&nbsp;</p>
+<p><a href="#!/login" class="btn btn-primary">Logout</a></p>
