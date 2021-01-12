@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script defer src='http://localhost:2000/render/getHJS'></script>
+    <script>
+        var hcpContext;
+
+        function docereeLogIn(userObj) {
+            if (!hcpContext) {
+                hcpContext = userObj;
+                console.log(userObj);
+                if (typeof setDocereeContext === 'function') {
+                    setDocereeContext(hcpContext);
+                }
+            }
+        };
+
+        function docereeLogOut() {
+            document.cookie =  '_docereeContext=; Max-Age=-99999999;';
+        };
+
+        docereeLogIn({firstName: "Akhileshcomp", lastName: "Guptacomp", specialization: "Pediatrics", zipCode: "122001", gender: "Male"})
+    </script>
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <!-- example 1 - slot interagion -->
+    <div> slot integraion in index.html</div>
+    <div id='DOC_11rvfbjkjbeoxh5'>
+      <script type='text/javascript'>
+        var docCont={
+          content_id:'DOC_11rvfbjkjbeoxh5',
+          content_sizes:['300 x 250'],
+          click:'DOCEREE_CLICK_URL_UNESC'
+        };
+        var docereeAds = docereeAds || {};
+        docereeAds[docCont.content_id] = docCont;
+      </script>
+      <script type='text/javascript' src="https://dev-programmatic.doceree.com/render/getJS">
+      </script>
+    </div>
+
+    <div id="root"></div>
+  </body>
+</html>
