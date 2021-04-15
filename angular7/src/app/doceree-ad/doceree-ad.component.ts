@@ -23,12 +23,11 @@ export class DocereeAdComponent implements OnInit {
   }
 
   public loadScriptForDivData() {
-    const el = <HTMLDivElement> document.getElementById('DOC_fg95yysk21ib1qg');
+    const el = <HTMLDivElement> document.getElementById('DOC_11rvfbjkjbeoxh5');
     const script = document.createElement('script');
-    script.innerText = "var docCont={contet_id:'DOC_fg95yysk21ib1qg',content_sizes:['200 x 200'],content_type:'img'};";  
+    script.innerText = "var docCont={content_id:'DOC_11rvfbjkjbeoxh5',content_sizes:['300 x 250'],click:'DOCEREE_CLICK_URL_UNESC'};var docereeAds = docereeAds || {};docereeAds[docCont.content_id] = docCont;";  
     el.appendChild(script);
-    this.loadScript('http://localhost:2007/getJS.js');
-    this.loadScript('https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js');
+    this.loadScript('https://dev-programmatic.doceree.com/render/getJS');
   }
 
   public loginToDoceree() {
@@ -44,7 +43,6 @@ export class DocereeAdComponent implements OnInit {
   const el = document.createElement('script');
   el.innerText = "docereeLogIn(" + JSON.stringify(userObj) + ");"
   body.appendChild(el);
-  console.log('appending login')
   }
 
   // script.innerText = 
