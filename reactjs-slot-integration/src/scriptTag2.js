@@ -13,7 +13,7 @@ const STag2 = () => (
 	          var docereeAds = docereeAds || {};
 	          docereeAds[docCont.content_id] = docCont;
         	`}</script>
-	        <script type="text/javascript" src='https://servedbydoceree.doceree.com/resources/d/render.js'>
+	        <script type="text/javascript" src='https://dev-servedbydoceree.doceree.com/resources/d/render.js'>
 	        </script>
         </Helmet>
     </div>

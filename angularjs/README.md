@@ -30,3 +30,11 @@ Step 3:
 
 
 its Done!
+
+
+==================================
+how to start the demo application
+==================================
+
+serve application using any http server
+ex - https://www.npmjs.com/package/live-server

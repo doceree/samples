@@ -25,7 +25,24 @@
                 .then(function (user) {
                     vm.user = user;
                 });
-            var userObj = {firstName: "Akhileshcomp", lastName: "Guptacomp", specialization: "Pediatrics", zipCode: "122001", gender: "Male"}
+            
+                // India user details -
+                var userObj = {
+                    firstName: "Akhileshcomp", 
+                    lastName: "Guptacomp", 
+                    specialization: "Pediatrics", 
+                    gender: "Male",
+                    email: "guptacomp@gmail.com",
+                    city: "gurugram",
+                    zipCode: "122001", 
+                }
+
+                // US user details -
+                // var userObj = {
+                //     hashedNPI: '126b68f7863008f0d19a387284a5d9df5518343ae3903b4a4a0a4773fe75e309',
+                //     hashedEmail: '7000e00356101e5b6294bd47de3f903005b619e5e4b66f0f4b5971e86b67cc42',
+                // }
+
 			docereeLogIn(userObj);
         }
 

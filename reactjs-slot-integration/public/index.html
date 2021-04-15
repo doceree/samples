@@ -11,7 +11,7 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <script defer src='http://localhost:2000/render/getHJS'></script>
+    <script defer src='https://dr15zo9o33078.cloudfront.net/script/render-header.js'></script>
     <script>
         var hcpContext;
 
@@ -29,7 +29,22 @@
             document.cookie =  '_docereeContext=; Max-Age=-99999999;';
         };
 
-        docereeLogIn({firstName: "Akhileshcomp", lastName: "Guptacomp", specialization: "Pediatrics", zipCode: "122001", gender: "Male"})
+        // India user details -
+        docereeLogIn({
+          firstName: "Akhileshcomp", 
+          lastName: "Guptacomp", 
+          specialization: "Pediatrics", 
+          gender: "Male",
+          email: "guptacomp@gmail.com",
+          city: "gurugram",
+          zipCode: "122001", 
+        })
+
+        // US user details -
+        // docereeLogIn({
+        //   hashedNPI: '126b68f7863008f0d19a387284a5d9df5518343ae3903b4a4a0a4773fe75e309',
+        //   hashedEmail: '7000e00356101e5b6294bd47de3f903005b619e5e4b66f0f4b5971e86b67cc42',
+        // })
     </script>
     <title>React App</title>
   </head>
@@ -48,7 +63,7 @@
         var docereeAds = docereeAds || {};
         docereeAds[docCont.content_id] = docCont;
       </script>
-      <script type='text/javascript' src="https://dev-programmatic.doceree.com/render/getJS">
+      <script type='text/javascript' src="https://dev-servedbydoceree.doceree.com/resources/d/render.js">
       </script>
     </div>
 

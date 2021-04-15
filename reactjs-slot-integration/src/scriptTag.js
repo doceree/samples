@@ -14,7 +14,7 @@ class STag extends React.Component {
 	    this.instance.appendChild(s);
 
 	    const script = document.createElement("script");
-	    script.src = "https://servedbydoceree.doceree.com/resources/d/render.js";
+	    script.src = "https://dev-servedbydoceree.doceree.com/resources/d/render.js";
 	    script.async = true;
 	    this.instance.appendChild(script);
 	}
