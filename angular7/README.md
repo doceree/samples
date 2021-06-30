@@ -2,10 +2,8 @@ Doceree support for publishers (angular 7)
 ===========================================
 
 Step 1:
-  Initilaize header scripts in Head tag
-    <script src='https://dr15zo9o33078.cloudfront.net/script/render-header.js'></script>
-
-  And add user login script in index.html as - 
+  Initilaize header scripts in Head tag and user login functions in index.html - 
+  <script src='https://servedbydoceree.doceree.com/script/render-header.js'></script>
     <script>
         var hcpContext;
         function docereeLogIn(userObj) {
