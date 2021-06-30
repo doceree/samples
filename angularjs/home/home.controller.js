@@ -5,8 +5,8 @@
         .module('app')
         .controller('HomeController', HomeController);
 
-    HomeController.$inject = ['UserService', '$rootScope'];
-    function HomeController(UserService, $rootScope) {
+    HomeController.$inject = ['UserService', '$rootScope', 'md5'];
+    function HomeController(UserService, $rootScope, md5) {
         var vm = this;
 
         vm.user = null;
@@ -38,10 +38,15 @@
                 }
 
                 // US user details -
-                // var userObj = {
-                //     hashedNPI: '126b68f7863008f0d19a387284a5d9df5518343ae3903b4a4a0a4773fe75e309',
-                //     hashedEmail: '7000e00356101e5b6294bd47de3f903005b619e5e4b66f0f4b5971e86b67cc42',
-                // }
+                const npi = '123456789';
+                const email = 'test.user@gmail.com';
+                const hashedNPI = md5.createHash(npi); 
+                const hashedEmail = md5.createHash(email);
+                var userObjUS = {
+                    hashedNPI,
+                    hashedEmail,
+                }
+                console.log("userObj >>>>>", userObjUS )
 
 			docereeLogIn(userObj);
         }
