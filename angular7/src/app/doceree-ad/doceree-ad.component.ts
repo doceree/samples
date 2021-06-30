@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Md5 } from 'ts-md5/dist/md5'
 
 @Component({
   selector: 'app-doceree-ad',
@@ -30,6 +31,7 @@ export class DocereeAdComponent implements OnInit {
     this.loadScript('https://dev-servedbydoceree.doceree.com/resources/d/render.js');
   }
 
+
   public loginToDoceree() {
     const body = <HTMLDivElement> document.body;
      
@@ -44,11 +46,18 @@ export class DocereeAdComponent implements OnInit {
       zipCode: "122001", 
     }
 
+
+
     // US user details -
-    // var userObj = {
-    //     hashedNPI: '126b68f7863008f0d19a387284a5d9df5518343ae3903b4a4a0a4773fe75e309',
-    //     hashedEmail: '7000e00356101e5b6294bd47de3f903005b619e5e4b66f0f4b5971e86b67cc42',
-    // }
+    const npi = '123456789';
+    const email = 'test.user@gmail.com';
+    const hashedNPI = Md5.hashStr(npi); 
+    const hashedEmail = Md5.hashStr(email);
+    var userObjUS = {
+        hashedNPI,
+        hashedEmail,
+    }
+    console.log("userObj >>>>>", userObjUS )
 
     const el = document.createElement('script');
     el.innerText = "docereeLogIn(" + JSON.stringify(userObj) + ");"
