@@ -1,7 +1,7 @@
-## import the doceree module
+## Import the doceree module
 	<script src="https://servedbydoceree.doceree.com/resources/p/doceree-header.min.js"></script>
 
-## inject the doceree module your app module 
+## Inject the doceree module your app module 
 	var app = angular.module('myApp', ['doceree-header'])
 
 ## Use $doceree service in the controller and its method setUser and deleteUser for login/logout.
