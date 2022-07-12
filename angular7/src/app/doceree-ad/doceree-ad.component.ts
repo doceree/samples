@@ -27,7 +27,7 @@ export class DocereeAdComponent implements OnInit {
     const script = document.createElement('script');
     script.innerText = "var docCont={content_id:'DOC_11rvfbjkjbeoxh5',content_sizes:['300 x 250'],click:'DOCEREE_CLICK_URL_UNESC'};var docereeAds = docereeAds || {};docereeAds[docCont.content_id] = docCont;";  
     el.appendChild(script);
-    this.loadScript('https://dev-servedbydoceree.doceree.com/resources/d/render.js');
+    this.loadScript('https://servedbydoceree.doceree.com/resources/p/render.js');
   }
 
 
@@ -36,13 +36,13 @@ export class DocereeAdComponent implements OnInit {
      
     // India user details -
      var userObj = {
-      firstName: "Akhileshcomp", 
-      lastName: "Guptacomp", 
+      firstName: "Akhilesh", 
+      lastName: "Gupta", 
       specialization: "Pediatrics", 
       gender: "Male",
-      email: "guptacomp@gmail.com",
-      city: "gurugram",
-      zipCode: "122001", 
+      email: "gupta.akhilesh@gmail.com",
+      city: "Delhi",
+      zipCode: "110085", 
     }
 
     // US user details -
@@ -55,9 +55,5 @@ export class DocereeAdComponent implements OnInit {
     el.innerText = "docereeLogIn(" + JSON.stringify(userObj) + ");"
     body.appendChild(el);
   }
-
-  // script.innerText = 
-  //   script.innerText = '';
-  
 
 }
