@@ -36,13 +36,13 @@ Step 2:
 
     supported user fields for indian HCP -
         var userObj = {
-          firstName: "Akhileshcomp", 
-          lastName: "Guptacomp", 
+          firstName: "Akhilesh", 
+          lastName: "Gupta", 
           specialization: "Pediatrics", 
           gender: "Male",
-          email: "guptacomp@gmail.com",
-          city: "gurugram",
-          zipCode: "122001", 
+          email: "gupta.akhilesh@gmail.com",
+          city: "Delhi",
+          zipCode: "110085", 
         }
 
 Step 3: 
