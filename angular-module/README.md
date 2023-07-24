@@ -4,7 +4,7 @@
 ## Inject the doceree module your app module 
 	var app = angular.module('myApp', ['doceree-header'])
 
-## Use $doceree service in the controller and its method setUser and deleteUser for login/logout.
+## Use $doceree service in the controller and various methods defined in this (example shared below).
 	app.controller('myCtrl', function($scope, $doceree, $timeout) {
 	    var userObj = {
 	        hashedNPI: '126b68f7863008f0d19a387284a5d9df5518343ae3903b4a4a0a4773fe75e309',
