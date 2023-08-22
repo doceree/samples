@@ -1,0 +1,71 @@
+
+@import "primereact/resources/themes/lara-light-indigo/theme.css";
+@import "primereact/resources/primereact.min.css";    
+@import "primeicons/primeicons.css";  
+@import 'primeflex/primeflex.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+.mt-2{
+  margin-top:2rem;
+}
+.mt-1{
+  margin-top:1rem;
+}
+.mb-2{
+  margin-bottom:2rem;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 4px;
+height: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #d0d2d3;
+  border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #d0d2d3;
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: rgb(255, 253, 253);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  transition: transform 0.3s;
+  transform: translateX(100%);
+  z-index: 1000;
+  padding:10px;
+  text-align: center;
+}
+
+.open.sidebar {
+  transform: translateX(0);
+}
+
+.overlay_cs {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: opacity 0.3s;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 999;
+}
+
+.open.overlay_cs {
+  opacity: 1;
+  pointer-events: auto;
+}
+
