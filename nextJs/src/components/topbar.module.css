@@ -1,0 +1,14 @@
+
+.topbar{
+    border: 1px solid #BFBFBF;
+    background-color: #00000000;
+    box-shadow: 1px 1px 20px 1px #aaaaaa;
+    display: flex;
+    height: 80px;
+    padding: 10px;
+}
+.customPrimeButton{
+    border:none;
+    background-color:transparent !important;
+    color: #070708 !important;
+}
